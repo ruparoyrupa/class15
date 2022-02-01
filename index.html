@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Class15</title>
+  </head>
+  <body>
+
+
+
+    <!-- Instant Data Check -->
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="card skill-list w-50">
+            <div class="card-header text-center">
+              <h3>Instant Data Check</h3>
+            </div>
+            <div class="card-body">
+              <input type="checkbox" class="skill" id="Php" value="php"><label for="php">Php</label> <br>
+              <input type="checkbox" class="skill" id="Laraval" value="Laraval"><label for="Laraval">Laraval</label> <br>
+              <input type="checkbox" class="skill" id="Wordpress" value="Wordpress"><label for="Wordpress">Wordpress</label> <br>
+              <input type="checkbox" class="skill" id="React" value="React"><label for="React">React</label> <br>
+              <input type="checkbox" class="skill" id="Ios" value="Ios"><label for="Ios">Ios</label> <br>
+              <input type="checkbox" class="skill" id="Python" value="Python"><label for="Python">Python</label> <br>
+              <input type="checkbox" class="skill" id="Golang" value="Golang"><label for="Golang">Golang</label> <br>
+              <input type="checkbox" class="skill" id="Javascript" value="Javascript"><label for="Javascript">Javascript</label> <br>
+              <input type="checkbox" class="skill" id="Android" value="Android"><label for="Android">Android</label>
+            </div>
+
+            <div class="card-footer  py-3">
+              <ul class="list-group skill-footer">
+                
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+   <!-- Calculator -->
+
+
+   <div class="calculator">
+     <div class="monitor">
+       <div class="top-monitor">0</div>
+       <div class="min-monitor"></div>
+     </div>
+      <span> <button class="cal-btn clear" onclick="allClear()">AC</button>
+        <button class="cal-btn clear" onclick="back()">C</button></span>
+       <button class="cal-btn2" onclick="valGet('/')">/</button>
+       <button class="cal-btn2" onclick="valGet(7)">7</button>
+       <button class="cal-btn2" onclick="valGet(8)">8</button>
+       <button class="cal-btn2" onclick="valGet(9)">9</button>
+       <button class="cal-btn2" onclick="valGet('*')">*</button>
+       <button class="cal-btn2" onclick="valGet(6)">6</button>
+       <button class="cal-btn2" onclick="valGet(5)">5</button>
+       <button class="cal-btn2" onclick="valGet(4)">4</button>
+       <button class="cal-btn2" onclick="valGet('-')">-</button>
+       <button class="cal-btn2" onclick="valGet(1)">1</button>
+       <button class="cal-btn2" onclick="valGet(2)">2</button>
+       <button class="cal-btn2" onclick="valGet(3)">3</button>
+       <button class="cal-btn2" style="height: 31%;" onclick="valGet('+')">+</button>
+       <button class="cal-btn2 vtr" onclick="valGet(0)">0</button>
+       <button class="cal-btn2 vtr" onclick="valGet('.')">.</button>
+       <button class="cal-btn2 vtr" onclick="finalResult()">=</button>
+       
+       
+     
+    </div>
+
+  <!--   Calculator  2    -->
+
+    <div class="calculator2">
+      <div class="monitor2">
+        <div class="top-monitor2">0</div>
+        <div class="min-monitor2"></div>
+      </div>
+        <button class="clear-btn cal-btn" style="width: 50%;" onclick="allClear2()">AC</button>
+        <button class="clear-btn cal-btn" style="width: 50%;" onclick="back2()">C</button>
+        <button class="cal-btn" onclick="valGet2(9)">9</button>
+        <button class="cal-btn" onclick="valGet2(7)">7</button>
+        <button class="cal-btn" onclick="valGet2(8)">8</button>
+        <button class="cal-btn" onclick="valGet2('/')">/</button>
+        <button class="cal-btn" onclick="valGet2(4)">4</button>
+        <button class="cal-btn" onclick="valGet2(6)">6</button>
+        <button class="cal-btn" onclick="valGet2(5)">5</button>
+        <button class="cal-btn" onclick="valGet2('*')">*</button>
+        <button class="cal-btn" onclick="valGet2(3)">3</button>
+        <button class="cal-btn" onclick="valGet2(1)">1</button>
+        <button class="cal-btn" onclick="valGet2(2)">2</button>
+        <button class="cal-btn" onclick="valGet2('-')">-</button>
+        <button class="cal-btn" onclick="valGet2(0)">0</button>
+        <button class="cal-btn" onclick="valGet2('.')">.</button>
+        <button class="cal-btn" onclick="finalResult2()">=</button>
+        <button class="cal-btn" onclick="valGet2('+')">+</button>
+        
+        
+      
+     </div>
+
+
+   <!--   Analog Clock   -->
+
+    <div class="clock mb-5">
+      <div class="h"></div>
+      <div class="m"></div>
+      <div class="s"></div>
+    </div>
+
+
+   <!--   Clock 2    -->
+
+
+    
+    <div class="clock2 mb-5">
+      <div class="hour"></div>
+      <div class="min"></div>
+      <div class="sec"></div>
+    </div>
+
+  
+
+  
+
+    <!-- Optional JavaScript -->
+    <!-- Popper.js first, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
+
+<!-- 
+<input type="checkbox" class="skill" id="Php" value="Php"><label for="Php">Php</label></div><br>
+<input type="checkbox" class="skill" id="Laraval" value="Laraval"><label for="Laraval">Laraval</label></div> <br>
+<input type="checkbox" class="skill" id="React" value="React"><label for="React">React</label></div> <br>
+<input type="checkbox" class="skill" id="Ios" value="Ios"><label for="Ios">Ios</label></div> <br>
+<input type="checkbox" class="skill" id="Wordpress" value="Wordpress"><label for="Wordpress">Wordpress</label></div> <br> -->

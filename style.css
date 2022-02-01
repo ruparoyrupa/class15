@@ -1,0 +1,315 @@
+
+body{
+    background-color: #e9e9e9;
+}
+
+
+/* Instant Data Check */
+
+.skill-list{
+    margin: 100px auto 0;
+}
+
+
+/*    Calculator    */
+
+
+
+.calculator{
+    width: 404px;
+    height: 525px;
+    margin: 200px auto 100px;
+    background-color: #020101;
+    text-align: right;
+    border: 10px solid rgb(61, 60, 60);
+    border-radius: 10px;
+    overflow: hidden;
+   
+
+
+}
+.monitor{
+    background-color: rgb(135, 211, 141);
+    height: 110px; 
+    border-radius: 10px 10px 0 0; 
+}
+.top-monitor{
+    font-size: 30px;
+   
+}
+
+.min-monitor{
+    
+    font-size: 40px;
+    font-weight: 500;
+}
+
+ button.cal-btn2{
+  width: 25%;
+  font-size: 20px;
+  border:5px solid black;
+  padding: 20px;
+  float: left;
+  border-radius: 10px;
+
+}
+
+
+span button.clear{
+    padding: 22px 70px;
+    background-color: rgb(247, 6, 6);
+    
+}
+
+.vtr {
+    position: relative;
+    top: -80px;
+}
+
+
+
+button:hover{
+    background-color: rgb(80, 78, 78);
+    color: white;
+}
+
+
+/* Calculator  2   */
+
+
+.calculator2{
+    width: 404px;
+    height: 520px;
+    margin: 200px auto 100px;
+    /* background-color:#fafafa; */
+    text-align: right;
+    border-radius: 10px;
+    overflow: hidden;
+   
+
+
+}
+.monitor2{
+    
+    height: 110px; 
+    border-radius: 10px 10px 0 0; 
+    background-color: black;
+    color: white;
+}
+.top-monitor2{
+    font-size: 30px;
+    font-weight: 300;
+   
+}
+
+.min-monitor2{
+    
+    font-size: 40px;
+    font-weight: 300;
+}
+
+button.cal-btn{
+  width: 25%;
+  font-size: 20px;
+  padding: 24px;
+  float: left;
+  border-radius: 15px;
+  border: none
+
+}
+.clear-btn{
+    
+}
+
+
+
+
+/*   Analog  Clock   */
+
+
+
+.clock{
+    width: 400px;
+    height: 400px;
+    border: 8px solid rgb(223, 4, 4);
+    margin: 200px auto 0;
+    background-image: url(./img/350Wx350H-1441245-1019-px.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    background-position: center center;
+
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+   
+   
+}
+
+.clock::before{
+    content: '';
+
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+}
+
+
+.s{
+    height: 290px;
+    width: 0;
+    display: flex;
+    justify-content: center;
+    
+    transform:rotate3d(0deg);
+}
+
+.s::before{
+    content: '';
+    width: 5px;
+    height: 160px;
+    background-color: red;
+    position: absolute;
+}
+
+
+
+.m{
+    height: 250px;
+    width:0;
+    display: flex;
+    justify-content: center;
+    
+   transform: rotate(45deg);
+}
+
+.m::before{
+    content: '';
+    width: 5px;
+    height: 140px;
+    background-color: red;
+    position: absolute;
+}
+
+
+.h{
+    height: 170px;
+    width:0;
+    display: flex;
+    justify-content: center;
+    
+   transform: rotate(80deg);
+}
+
+.h::before{
+    content: '';
+    width: 5px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+}
+
+
+
+
+/* clock 2 */
+
+
+
+
+.clock2{
+    width: 500px;
+    height: 500px;
+    /* border: 8px solid rgb(223, 4, 4); */
+    margin: 200px auto 0;
+    background-image: url(./img/clock3.png);
+    background-size: cover;
+    border-radius: 50%;
+    background-position: center center;
+
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+   
+   
+}
+
+
+.clock2::before {
+    content: '';
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color:#e0b257;
+    position: absolute;
+}
+
+
+.sec{
+    height:372px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+
+    transform: rotate(0deg);
+}
+
+.sec::before{
+    content: '';
+    height: 197px;
+    width: 28px;
+   position: absolute;
+   background-image: url(./img/272191798_355441249457663_395625290903412271_n.png);
+   background-position: center center;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+
+
+.min{
+    height:376px;
+    width: 1px;
+    display: flex;
+    justify-content: center;
+   
+    transform: rotate(45deg);
+}
+
+.min::before{
+    content: '';
+    height: 219px;
+    width: 48px;
+   position: absolute;
+   background-image: url(./img/272050840_199894802323198_2494319355411641623_n.png);
+   background-position: center center;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+
+
+
+
+.hour{
+    height:274px;
+    width: 1px;
+    display: flex;
+    justify-content: center;
+   
+    transform: rotate(90deg);
+}
+
+.hour::before{
+    content: '';
+    height: 135px;
+    width: 48px;
+   position: absolute;
+   background-image: url(./img/272083332_650227442841528_41501051589328756_n.png);
+   background-position: center center;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
